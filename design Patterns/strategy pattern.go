@@ -42,16 +42,16 @@ func (con MongoDbConnection) connect() {
 }
 
 
-func main() {
-	MySqlConnection := MYSQLConnection{Connectionstring: "MySql DB is connected"}
-	con := DBconnection{Db: MySqlConnection}
-	con.Dbconnect()
+// func main() {
+// 	MySqlConnection := MYSQLConnection{Connectionstring: "MySql DB is connected"}
+// 	con := DBconnection{Db: MySqlConnection}
+// 	con.Dbconnect()
 
-	pgConnection := PostgressConnection{ConnectionString: "Postgress DB is connected"}
-	con2 := DBconnection{Db: pgConnection}
-	con2.Dbconnect()
+// 	pgConnection := PostgressConnection{ConnectionString: "Postgress DB is connected"}
+// 	con2 := DBconnection{Db: pgConnection}
+// 	con2.Dbconnect()
 
-	mgConnection := MongoDbConnection{ConnectionString: "Mongo DB is connected"}
-	con3 := DBconnection{Db: mgConnection}
-	con3.Dbconnect()
-}
+// 	mgConnection := MongoDbConnection{ConnectionString: "Mongo DB is connected"}
+// 	con3 := DBconnection{Db: mgConnection}
+// 	con3.Dbconnect()
+// }
